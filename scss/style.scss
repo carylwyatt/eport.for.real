@@ -1,0 +1,36 @@
+.row.title {
+	background-color: orange;
+	padding: 0 50px;
+	max-width: 100%;
+}
+
+h1 {
+	color: white;
+	font-family: helvetica;
+	font-size: 6.5rem;
+}
+h2 {
+	color: white;
+	font-family: helvetica;
+	font-size: 5rem;
+	padding-bottom: 7px;
+	font-weight: 300;
+}
+h1, h2 {
+	line-height: .9;
+}
+
+.row.main-content {
+	padding: 30px 150px 0 150px;
+	p {
+		font-size: 1.3rem;
+		line-height: 1.3;
+	}
+}
+
+article {
+	font-family: helvetica;
+}
+
+
+

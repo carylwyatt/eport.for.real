@@ -1,0 +1,42 @@
+/* line 1, ../scss/style.scss */
+.row.title {
+  background-color: orange;
+  padding: 0 50px;
+  max-width: 100%;
+}
+
+/* line 7, ../scss/style.scss */
+h1 {
+  color: white;
+  font-family: helvetica;
+  font-size: 6.5rem;
+}
+
+/* line 12, ../scss/style.scss */
+h2 {
+  color: white;
+  font-family: helvetica;
+  font-size: 5rem;
+  padding-bottom: 7px;
+  font-weight: 300;
+}
+
+/* line 19, ../scss/style.scss */
+h1, h2 {
+  line-height: .9;
+}
+
+/* line 23, ../scss/style.scss */
+.row.main-content {
+  padding: 30px 150px 0 150px;
+}
+/* line 25, ../scss/style.scss */
+.row.main-content p {
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+/* line 31, ../scss/style.scss */
+article {
+  font-family: helvetica;
+}
