@@ -132,14 +132,15 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     banner: '/*! <%= pkg.name %> <%= pkg.version %> scripts.min.js <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %> */\n',
-                    report: 'gzip'
+                    report: 'gzip',
+                    mangle: false
                 },
                 files: {
                     'wp-content/themes/eport/library/js/scripts.min.js' : [
                         'wp-content/themes/eport/bower_components/foundation/js/vendor/jquery.js',
                         'wp-content/themes/eport/bower_components/foundation/js/vendor/modernizr.js',
                         'wp-content/themes/eport/bower_components/foundation.min.js',
-                        //'wp-content/themes/eport/library/js/**/*.js'
+                        'wp-content/themes/eport/library/js/**/*.js'
                     ]
                 }
             },
@@ -155,7 +156,7 @@ module.exports = function(grunt) {
                         'wp-content/themes/eport/bower_components/foundation/js/vendor/jquery.js',
                         'wp-content/themes/eport/bower_components/foundation/js/vendor/modernizr.js',
                         'wp-content/themes/eport/bower_components/foundation.min.js',
-                        //'wp-content/themes/eport/library/js/**/*.js'
+                        'wp-content/themes/eport/library/js/**/*.js'
                     ]
                 }
             }

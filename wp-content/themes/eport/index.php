@@ -7,11 +7,9 @@
 				    <div id="main" class="large-8 medium-8 columns" role="main">
 					 
 					  <!-- To see additional archive styles, visit the /partials directory -->
-					    <?php get_template_part( 'partials/loop', 'archive-grid' ); ?>
+					    <?php get_template_part( 'partials/loop', 'archive-accordion' ); ?>
 								
 				    </div> <!-- end #main -->
-    
-				    <?php get_sidebar(); ?>
 				    
 				</div> <!-- end #inner-content -->
     

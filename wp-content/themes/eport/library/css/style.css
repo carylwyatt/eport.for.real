@@ -1,4 +1,4 @@
-/*! widgetware.com-new 0.0.1 style.css 2015-02-01 11:10:13 PM */
+/*! widgetware.com-new 0.0.1 style.css 2015-02-02 2:09:19 AM */
 
 /******************************************************************
 
@@ -7204,7 +7204,7 @@ blockquote p {
 
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: #FF8c00;
   color: #FFFFFF;
   height: 2.8125rem;
   line-height: 2.8125rem;
@@ -7225,7 +7225,7 @@ blockquote p {
   height: 2.8125rem;
   position: absolute;
   top: 0;
-  border-right: solid 1px #1a1a1a;
+  border-right: solid 1px #804600;
   left: 0;
 }
 
@@ -7234,7 +7234,7 @@ blockquote p {
   height: 2.8125rem;
   position: absolute;
   top: 0;
-  border-left: solid 1px #1a1a1a;
+  border-left: solid 1px #804600;
   right: 0;
 }
 
@@ -7368,7 +7368,7 @@ ul.off-canvas-list li a {
   transition: background 300ms ease;
 }
 ul.off-canvas-list li a:hover {
-  background: #242424;
+  background: #b36200;
 }
 
 .move-right > .inner-wrap {
@@ -9047,7 +9047,7 @@ Main components
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: rgba(255, 165, 0, 0.99) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  background: rgba(255, 165, 0, 0.99) url(../library/images/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;

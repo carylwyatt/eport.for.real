@@ -48,26 +48,12 @@
 				<div id="container">
 					<header class="header" role="banner">
 							
-						 <!-- This navs will be applied to the topbar, above all content 
-							  To see additional nav styles, visit the /partials directory -->
-						 <?php get_template_part( 'partials/nav', 'top-offcanvas' ); ?>
-								 
-						<div id="inner-header" class="row">
-							<div class="large-12 medium-12 columns">
-								<h1>
-									<a href="<?php echo home_url(); ?>" rel="nofollow">
-										<?php bloginfo('name'); ?>
-									</a>
-									<small>
-										<?php  bloginfo('description'); ?>
-									</small>
-								</h1>
-							</div>
-							
-							 <!-- This navs will be applied to the main, under the logo 
-								  To see additional nav styles, visit the /partials directory -->
-								  
-							 <?php // get_template_part( 'partials/nav', 'main-offcanvas' ); ?>
-	
-						</div> <!-- end #inner-header -->
+						 <div class="row title">
+					      <div class="large-12 columns">
+					        <h1>caryl wyatt</h1>
+					        <h2>mlis eportfolio &vellip; sjsu ischool</h2>
+					      </div>
+					    </div>
 					</header> <!-- end .header -->
+
+			
