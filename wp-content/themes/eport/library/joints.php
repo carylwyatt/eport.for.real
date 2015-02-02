@@ -137,7 +137,7 @@ function joints_scripts_and_styles() {
     //Minified version of jQuery, Foundation, and All Joints Scripts
     //wp_enqueue_script( 'joints-js', get_template_directory_uri() . '/library/js/scripts.min.js', array( 'jquery' ), $theme_version, true );
     wp_enqueue_script( 'livereload-js', '//localhost:35729/livereload.js', array(), $theme_version, true );
-    wp_enqueue_script( 'joints-js', get_template_directory_uri() . '/library/js/scripts.min.js', array(), $theme_version, true );
+    wp_enqueue_script( 'joints-js', get_template_directory_uri() . '/library/scripts.js', array(), $theme_version, true );
   }
 }
 

@@ -139,34 +139,58 @@ module.exports = function(grunt) {
                     'wp-content/themes/eport/library/js/scripts.min.js' : [
                         'wp-content/themes/eport/bower_components/foundation/js/vendor/jquery.js',
                         'wp-content/themes/eport/bower_components/foundation/js/vendor/modernizr.js',
-                        'wp-content/themes/eport/bower_components/foundation.min.js',
+                        'wp-content/themes/eport/bower_components/foundation/js/foundation.min.js',
                         'wp-content/themes/eport/library/js/**/*.js'
                     ]
                 }
             },
+            
             dev: {
                 options: {
                     banner: '/*! <%= pkg.name %> <%= pkg.version %> scripts.js <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %> */\n',
-                    //beautify: true,
-                    //compress: false,
+                    beautify: true,
+                    compress: false,
                     mangle: false
                 },
                 files: {
                     'wp-content/themes/eport/library/js/scripts.js' : [
                         'wp-content/themes/eport/bower_components/foundation/js/vendor/jquery.js',
                         'wp-content/themes/eport/bower_components/foundation/js/vendor/modernizr.js',
-                        'wp-content/themes/eport/bower_components/foundation.min.js',
+                       'wp-content/themes/eport/bower_components/foundation/js/foundation.min.js',
                         'wp-content/themes/eport/library/js/**/*.js'
                     ]
                 }
             }
         },
 
+        concat: {
+          dist: {
+            src: [
+                'wp-content/themes/eport/bower_components/foundation/js/vendor/jquery.js',
+                'wp-content/themes/eport/bower_components/foundation/js/vendor/modernizr.js',
+                'wp-content/themes/eport/bower_components/foundation/js/foundation.min.js',
+                'wp-content/themes/eport/library/js/**/*.js'
+            ],
+            dest: 'wp-content/themes/eport/library/scripts.min.js',
+          },
+          dev: {
+            src: [
+                'wp-content/themes/eport/bower_components/foundation/js/vendor/jquery.js',
+                'wp-content/themes/eport/bower_components/foundation/js/vendor/modernizr.js',
+                'wp-content/themes/eport/bower_components/foundation/js/foundation.min.js',
+                'wp-content/themes/eport/library/js/**/*.js'
+            ],
+            dest: 'wp-content/themes/eport/library/scripts.js',
+          }
+        },
+
         watch: {
             //Livereload
             scripts: {
-                files: 'wp-content/themes/eport/**/*.js',
-                tasks: ['uglify:dev', 'uglify:dist'],
+                files: 'wp-content/themes/eport/library/js/**/*.js',
+                //tasks: ['uglify:dev', 'uglify:dist'],
+                //tasks: ['concat:dev', 'concat:dist'],
+                tasks: ['concat:dev']
             },
             sass: {
                 files: 'wp-content/themes/eport/library/scss/**/*.scss',
@@ -177,13 +201,15 @@ module.exports = function(grunt) {
             }
         }
     });
- 
+    
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+
     //grunt.loadNpmTasks('grunt-libsass');
     //grunt.loadNpmTasks('grunt-curl');
     //grunt.loadNpmTasks('grunt-phpdocumentor');
@@ -191,8 +217,10 @@ module.exports = function(grunt) {
  
     grunt.registerTask('default', [
        // 'jshint',
-        'uglify:dev',
-        'uglify:dist',
+        //'uglify:dev',
+        //'uglify:dist',
+        'concat:dev',
+        'concat:dist',
         'sass:dev',
         'sass:dist',
         'watch',
