@@ -1,6 +1,8 @@
+$( document ).ready(function() {
+	$('.left-off-canvas-toggle').on('click',function(e){
+		e.preventDefault();
+		console.log(e);
 
-$('.left-off-canvas-toggle').on('click',function(e){
-	console.log(e);
-
-	$('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');	
+		$('.off-canvas-wrap').foundation('offcanvas', 'toggle', 'move-right');	
+	});
 });

@@ -132,7 +132,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     banner: '/*! <%= pkg.name %> <%= pkg.version %> scripts.min.js <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %> */\n',
-                    report: 'gzip',
+                    //report: 'gzip',
                     mangle: false
                 },
                 files: {
@@ -147,8 +147,8 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     banner: '/*! <%= pkg.name %> <%= pkg.version %> scripts.js <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %> */\n',
-                    beautify: true,
-                    compress: false,
+                    //beautify: true,
+                    //compress: false,
                     mangle: false
                 },
                 files: {
