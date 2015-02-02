@@ -15,21 +15,20 @@
         <li><label>Table of Contents</label></li>
         <li><a href="#">Introduction</a></li>
         <li><a href="#">Philosophy</a></li>
-        <li><a href="#">A: Ethics</a></li>
-        <li><a href="#">B: Something Else</a></li>
-        <li><a href="#">C: Stuff</a></li>
-        <li><a href="#">D: Stuff</a></li>
-        <li><a href="#">E: Stuff</a></li>
-        <li><a href="#">F: Stuff</a></li>
-        <li><a href="#">G: Stuff</a></li>
-        <li><a href="#">H: Stuff</a></li>
-        <li><a href="#">I: Stuff</a></li>
-        <li><a href="#">J: Stuff</a></li>
-        <li><a href="#">K: Stuff</a></li>
-        <li><a href="#">L: Stuff</a></li>
-        <li><a href="#">M: Stuff</a></li>
-        <li><a href="#">N: Stuff</a></li>
-        <li><a href="#">O: Stuff</a></li>
+        <li><a href="#">Competency A</a></li>
+        <li><a href="#">Competency B</a></li>
+        <li><a href="#">Competency C</a></li>
+        <li><a href="#">Competency D</a></li>
+        <li><a href="#">Competency E</a></li>
+        <li><a href="#">Competency F</a></li>
+        <li><a href="#">Competency G</a></li>
+        <li><a href="#">Competency H</a></li>
+        <li><a href="#">Competency I</a></li>
+        <li><a href="#">Competency J</a></li>
+        <li><a href="#">Competency K</a></li>
+        <li><a href="#">Competency K</a></li>
+        <li><a href="#">Competency M</a></li>
+        <li><a href="#">Competency N</a></li>
         <li><a href="#">Conclusion</a></li>
       </ul>
     </aside>
