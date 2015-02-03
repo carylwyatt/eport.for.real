@@ -1,4 +1,4 @@
-/*! widgetware.com-new 0.0.1 style.css 2015-02-02 4:13:15 AM */
+/*! widgetware.com-new 0.0.1 style.css 2015-02-02 9:22:51 PM */
 
 /******************************************************************
 
@@ -16,6 +16,7 @@ of the styles inside media queries.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lato:100,300,400|Roboto:400,100,300);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -8980,16 +8981,16 @@ EPORT
 
 h1 {
   color: white;
-  font-family: helvetica;
+  font-family: "Lato", sans-serif;
   font-size: 6.5rem;
 }
 
 h2 {
   color: white;
-  font-family: helvetica;
+  font-family: "Lato", sans-serif;
   font-size: 5rem;
   padding-bottom: 7px;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 h1, h2 {
@@ -8998,6 +8999,19 @@ h1, h2 {
 
 h3 {
   font-size: 2.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.header-italic {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+.off-canvas-list ul li a,
+ul.off-canvas-list li label,
+p.source-org.copyright {
+  font-family: "Lato", sans-serif;
 }
 
 .row.main-content {
@@ -9009,7 +9023,7 @@ h3 {
 }
 
 article {
-  font-family: helvetica;
+  font-family: "Lato", sans-serif;
 }
 
 /* -------------------------------- 
@@ -9090,6 +9104,10 @@ Main components
     right: 30px;
     bottom: 30px;
   }
+}
+p.source-org.copyright {
+  font-family: "Lato", sans-serif;
+  padding-left: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

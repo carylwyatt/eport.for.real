@@ -1,3 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lato:100,300,400|Roboto:400,100,300);
+$primary-font: 'Droid Sans', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+$third-font: 'Roboto', sans-serif;
+
 .row.title {
 	background-color: orange;
 	padding: 0 50px;
@@ -6,15 +11,15 @@
 
 h1 {
 	color: white;
-	font-family: helvetica;
+	font-family: $secondary-font;
 	font-size: 6.5rem;
 }
 h2 {
 	color: white;
-	font-family: helvetica;
+	font-family: $secondary-font;
 	font-size: 5rem;
 	padding-bottom: 7px;
-	font-weight: 300;
+	font-weight: 100;
 }
 h1, h2 {
 	line-height: .9;
@@ -22,6 +27,18 @@ h1, h2 {
 
 h3 {
 	font-size: 2.5rem;
+  font-family: $secondary-font;
+}
+
+.header-italic {
+  font-family: $secondary-font;
+  font-style: italic;
+  font-size:3rem;
+}
+
+.off-canvas-list ul li a,
+ul.off-canvas-list li label {
+  font-family: $secondary-font;
 }
 
 .row.main-content {
@@ -33,7 +50,7 @@ h3 {
 }
 
 article {
-	font-family: helvetica;
+	font-family: $secondary-font;
 }
 
 /* -------------------------------- 
@@ -109,4 +126,9 @@ Main components
     right: 30px;
     bottom: 30px;
   }
+}
+
+p.source-org.copyright {
+  font-family: $secondary-font;
+  padding-left: 150px;
 }

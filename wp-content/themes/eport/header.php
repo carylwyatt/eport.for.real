@@ -42,7 +42,8 @@
 
 	</head>
 
-	<body <?php body_class(); ?>>
+
+<body <?php body_class(); ?>>
 		<div class="off-canvas-wrap" data-offcanvas>
 			<div class="inner-wrap">
 				<div id="container">
@@ -51,9 +52,25 @@
 						 <div class="row title">
 					      <div class="large-12 columns">
 					        <h1>caryl wyatt</h1>
-					        <h2>mlis eportfolio &vellip; sjsu ischool</h2>
+					        <h2>mlis eportfolio <span class="header-italic">sjsu ischool</span></h2>
 					      </div>
 					    </div>
-					</header> <!-- end .header -->
+					</header>
 
-			
+
+					<div class="off-canvas-wrap" data-offcanvas>
+					  <div class="inner-wrap">
+					    <nav class="tab-bar">
+					      <section class="left-small">
+					        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+					      </section>
+
+					    </nav>
+
+					    <aside class="left-off-canvas-menu">
+					      <ul class="off-canvas-list">
+					        <li><label>Table of Contents</label></li>
+					        	<?php joints_main_nav(); ?> 
+					      </ul>
+					    </aside>
+
