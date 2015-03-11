@@ -1,4 +1,4 @@
-/*! widgetware.com-new 0.0.1 style.css 2015-03-10 6:32:29 PM */
+/*! widgetware.com-new 0.0.1 style.css 2015-03-10 8:08:01 PM */
 
 /******************************************************************
 
@@ -16,7 +16,7 @@ of the styles inside media queries.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Merriweather:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Merriweather:400,300,700,300italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -9005,7 +9005,29 @@ h3 {
 h4 {
   font-size: 1.75rem;
   font-family: "Lato", sans-serif;
-  margin-bottom: 0;
+  margin-bottom: .25em;
+}
+
+h5 {
+  font-size: 1.3rem;
+  font-family: 'Lato';
+  margin-bottom: .2em;
+}
+h5 a i {
+  color: darkorange;
+  font-size: 1.125em;
+  padding: 0 .3em;
+}
+h5 a i:hover {
+  color: white;
+  background: darkorange;
+}
+
+blockquote {
+  font-weight: 300;
+  font-style: italic;
+  border-left: 1px solid orange;
+  padding: 0 1.25rem 0 1.1875rem;
 }
 
 .header-italic {
@@ -9024,8 +9046,10 @@ ul.off-canvas-list li label {
 }
 .row.main-content p {
   font-family: "Merriweather", serif;
-  font-size: 1.2rem;
-  line-height: 1.4;
+  font-size: 1.125em;
+  line-height: 1.5;
+  letter-spacing: .025em;
+  font-weight: 300;
 }
 
 article {
