@@ -9,6 +9,15 @@ $secondary-font: 'Lato', sans-serif;
 	max-width: 100%;
 }
 
+a {
+  color: darkorange;
+  text-decoration: none;
+  &:hover {
+    color: darkorange;
+    text-decoration: underline;
+  }
+}
+
 h1 {
 	color: white;
 	font-family: $secondary-font;

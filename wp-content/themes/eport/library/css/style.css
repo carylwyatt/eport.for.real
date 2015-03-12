@@ -1,4 +1,4 @@
-/*! widgetware.com-new 0.0.1 style.css 2015-03-10 11:22:37 PM */
+/*! widgetware.com-new 0.0.1 style.css 2015-03-11 8:50:26 PM */
 
 /******************************************************************
 
@@ -8977,6 +8977,15 @@ EPORT
   background-color: orange;
   padding: 0 50px;
   max-width: 100%;
+}
+
+a {
+  color: darkorange;
+  text-decoration: none;
+}
+a:hover {
+  color: darkorange;
+  text-decoration: underline;
 }
 
 h1 {
